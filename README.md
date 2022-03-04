@@ -14,6 +14,7 @@ The list of features used to train the model is the following:
 
 The algorithms are compared below:
 
-1) LSTM, accuracy=82.7%
-[lstm.png]
-3) 
+1) LSTM, accuracy=82.7%  
+[!lstm.png]
+
+2) 
