@@ -1,7 +1,8 @@
 # Weather historical time series for pollution prediction
 
+See notebook "time_series_notebook.ipynb" for the results of the study.
+
 The aim of this study is to compare different algorithms in time series modelling.
-See notebook "time_series_notebook.ipynb" for all the results of the study.
 The dataset reports on the weather and the level of pollution each hour for five years at the US embassy in Beijing, China.
 The data includes the date-time, the pollution called PM2.5 concentration, and the weather information including dew point, temperature, pressure, wind direction, wind speed and the cumulative number of hours of snow and rain. PM2.5 concentration is used to label each time step: 1 if the pollution threshold has been passed at that hour, othrewise 0.
 The list of features used to train the model is the following:
@@ -18,7 +19,7 @@ The algorithms are compared below:
 1) LSTM, accuracy=82.7%  
 Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems).
 
-![picture](https://github.com/SamueleFaggiano/pollution_timeseries/blob/main/lstm.png){ width="800" height="600" style="display: block; margin: 0 auto" }
+![picture](https://github.com/SamueleFaggiano/pollution_timeseries/blob/main/lstm.png)
 
 2) CNN (over features), accuracy=82.5%
 Deep CNNs have been quite popular in areas such as Image Processing, Computer Vision, etc. Recently, the research community has been showing a growing interest in using CNNs for time-series forecasting problems. In this case the filters of the Convolutional Layer will slide over the feature to get significant patterns.
