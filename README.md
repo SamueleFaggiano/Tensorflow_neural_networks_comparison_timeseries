@@ -19,6 +19,7 @@ The algorithms are compared below:
 Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems).
 
 ![alt text](https://github.com/SamueleFaggiano/pollution_timeseries/blob/main/lstm.png)
+<img align="left" width="100" height="100" src=https://github.com/SamueleFaggiano/pollution_timeseries/blob/main/lstm.png)
 
 2) CNN (over features), accuracy=82.5%
 Deep CNNs have been quite popular in areas such as Image Processing, Computer Vision, etc. Recently, the research community has been showing a growing interest in using CNNs for time-series forecasting problems. In this case the filters of the Convolutional Layer will slide over the feature to get significant patterns.
