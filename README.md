@@ -16,18 +16,22 @@ The algorithms are compared below:
 
 1) LSTM, accuracy=82.7%  
 Long short-term memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can process not only single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition and anomaly detection in network traffic or IDSs (intrusion detection systems).
+
 ![alt text](https://github.com/SamueleFaggiano/pollution_timeseries/blob/main/lstm.png)
 
 2) CNN (over features), accuracy=82.5%
 Deep CNNs have been quite popular in areas such as Image Processing, Computer Vision, etc. Recently, the research community has been showing a growing interest in using CNNs for time-series forecasting problems. In this case the filters of the Convolutional Layer will slide over the feature to get significant patterns.
+
 ![alt text](https://github.com/SamueleFaggiano/pollution_timeseries/blob/main/cnn_over_features.png)
 
 3) Multi-head CNN, accuracy=82.5%
 Unlike the previous approach, this time the CNN has different inputs, one for each features. Each of the Convolutional Layer will try to find patterns over time for each features, before going into the Fully-Connected-Layer.
+
 ![alt text](https://github.com/SamueleFaggiano/pollution_timeseries/blob/main/Multi-head-CNN.png)
 
 4) Dense Neural Network, accuracy=78.8%
 Here I tried to flatten the timesteps considering each of them as single feature, and all of them go inside a Fully Connected Layer of a DNN. The dimensionality increases and the performance decreased. 
+
 ![alt text](https://github.com/SamueleFaggiano/pollution_timeseries/blob/main/nn.jpg)
 
 5) LSTM + DNN + Month Embedding, accuracy=71.1%
