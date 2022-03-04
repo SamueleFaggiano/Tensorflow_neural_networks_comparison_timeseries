@@ -12,4 +12,8 @@ The list of features used to train the model is the following:
 * rain: Cumulated hours of rain
 * pollution: 1 (yes) or 0 (no), threshold=80
 
-The algorithms are compared below.
+The algorithms are compared below:
+
+1) LSTM, accuracy=82.7%
+
+3) 
