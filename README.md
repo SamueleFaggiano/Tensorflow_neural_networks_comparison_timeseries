@@ -1,1 +1,2 @@
-# pollution_timeseries
+# Weather historical timeseries for pollution prediction
+
